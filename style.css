@@ -1,0 +1,73 @@
+body{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.7rem;
+    background-color: darkgrey;
+}
+.header .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.game{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; 
+}
+.game .choice{
+    display: flex; /* flex */
+    padding: 20px 30px;
+    margin: 30px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.game .choice *{
+    background-color: lightcyan;
+    font-size: 36px;
+    padding: 2rem;
+    flex: 1;
+    transition: 80ms;
+    border-radius: 5px;
+}
+.game .choice *:hover{
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+}
+.results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    gap: 30px;
+}
+.results div{
+    padding: 30px 50px;
+    display: flex;
+    min-width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    border-radius: 10px;
+    flex: 1;
+}
+footer{
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    background-color: darkgrey;
+}

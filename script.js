@@ -3,17 +3,19 @@ const PAPER = 2;
 const SCISSORS = 3;
 
 function game (){
-    console.log('Script is running')
-    for(let i = 0; i<=5 ; i++){
-        input = getPlayerInput()
-        if(input){
-            descision(input, getComputerInput());
-        }
-    }
+    //rework the logic
+
+    // console.log('Script is running')
+    // for(let i = 0; i<=5 ; i++){
+    //     input = getPlayerInput()
+    //     if(input){
+    //         descision(input, getComputerInput());
+    //     }
+    // }
 }
 
 function getPlayerInput (){
-    let input = prompt('Rock, Paper, Scissors?').toLocaleLowerCase();
+    //let input = prompt('Rock, Paper, Scissors?').toLocaleLowerCase();
     switch (input){
         case 'rock':
             return ROCK;
