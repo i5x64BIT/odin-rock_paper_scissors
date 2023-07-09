@@ -5,11 +5,19 @@ const SCISSORS = 3;
 let playerInput;
 let computerInput;
 
-let playerWins = 0;
-let computerWins = 0;
+let playerWins;
+let computerWins;
 
 function game (){
+    playerWins = 0
+    computerWins = 0;
+    playerInput = '?'
+    computerInput = '?'
+
+    updateScore();
+
     initGame();
+    return;
 }
 
 function initGame (){
@@ -21,6 +29,14 @@ function initGame (){
             descision(playerInput, computerInput);
 
             updateScore(btn.className , computerInput);
+
+            if(computerWins === 5){   //Restart game after 5 wins
+                alert('Computer has won!');
+                game();
+            } else if(playerWins === 5){
+                alert('You won!');
+                game();
+            }
         })
     })
 
