@@ -9,9 +9,6 @@ let playerWins = 0;
 let computerWins = 0;
 
 function game (){
-    console.log('Game has Started!')
-    
-
     initGame();
 }
 
@@ -28,7 +25,6 @@ function initGame (){
     })
 
     const getPlayerInput = (target) => {
-        console.log(target)
         switch (target.className){
             case 'rock':
                 return ROCK;
@@ -37,7 +33,7 @@ function initGame (){
             case 'scissors':
                 return SCISSORS;
             default:
-                console.error('Something wen\'t wrong, please refresh the page!');
+                alert('Something wen\'t wrong, please refresh the page!');
         }
     }
 }
@@ -55,42 +51,34 @@ function getComputerInput() {
 }
 
 function descision(playerInput, computerInput){
-    if(playerInput === computerInput){
-        console.log('Tie');
-    }
+    if(playerInput === computerInput){ return; }
     if(playerInput === ROCK){
         if(computerInput === SCISSORS){
             playerWins++;
-            console.log('You won!')
             return;
         }
         else{
             computerWins++;
-            console.log('The computer won :(')
             return;
         }
     }
     if(playerInput === PAPER){
         if(computerInput === ROCK){
             playerWins++;
-            console.log('You won!')
             return;
         }
         else{
             computerWins++;
-            console.log('The computer won :(')
             return;
         }
     }
     if(playerInput === SCISSORS){
         if(computerInput === PAPER){
             playerWins++;
-            console.log('You won!')
             return;
         }
         else{
             computerWins++;
-            console.log('The computer won :(')
             return;
         }
     }
