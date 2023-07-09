@@ -2,9 +2,13 @@ body{
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+body > .container{
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .header{
@@ -24,11 +28,12 @@ body{
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column; 
+   flex-direction: column;
 }
 .game .choice{
     display: flex; /* flex */
-    padding: 20px 30px;
+    padding: 20px 0 60px 0;
+    margin: 0;
     margin: 30px;
     justify-content: space-between;
     gap: 20px;
@@ -37,7 +42,6 @@ body{
     background-color: lightcyan;
     font-size: 36px;
     padding: 2rem;
-    flex: 1;
     transition: 80ms;
     border-radius: 5px;
 }
@@ -62,12 +66,12 @@ body{
     justify-content: center;
     background-color: lightblue;
     border-radius: 10px;
-    flex: 1;
 }
 footer{
     font-size: 16px;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     color: white;
     background-color: darkgrey;
+    margin: 0px;
 }
